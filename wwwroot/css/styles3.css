@@ -79,28 +79,7 @@ main {
     color: #333; /* Secondary Color for texts */
 }
 
-nav {
-    text-align: center;
-    background-color: #004a36; /* Updated to match styles1.css */
-    padding: 10px 0;
-}
 
-    nav ul {
-        list-style: none;
-    }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-    nav a {
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase; /* Added to match styles1.css */
-        font-size: 16px; /* Ensured consistency */
-        /* ... other styles ... */
-    }
 
 /* Main styles */
 main {
