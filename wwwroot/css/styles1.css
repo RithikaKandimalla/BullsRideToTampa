@@ -1,5 +1,4 @@
-﻿
-/* Basic Reset */
+﻿/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -61,11 +60,6 @@ nav {
             margin: 0 20px;
         }
 
-    nav a.active {
-        color: #cccccc;
-        background-color: #006747;
-    }
-
     nav a {
         color: #ffffff;
         text-decoration: none;
@@ -84,6 +78,16 @@ main {
     margin: 40px 0;
     color: #333; /* Secondary Color for texts */
 }
+
+
+
+/* Main styles */
+main {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f2e9e4;
+}
+
 
 #business-list {
     max-width: 90%;
