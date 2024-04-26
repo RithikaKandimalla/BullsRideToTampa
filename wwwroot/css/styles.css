@@ -1,0 +1,152 @@
+﻿/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f4f4f4 0%, #ffffff 100%);
+    line-height: 1.6;
+    padding: 0; /* Removed padding for full-width */
+}
+
+/* Header and Navigation Styles */
+header, nav {
+    background: #004a36; /* Primary Color */
+    color: #fff;
+    min-height: 70px;
+    border-bottom: #cccccc solid 3px; /* Accent Color for contrast */
+}
+
+    header a, nav a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    header ul, nav ul {
+        padding: 0;
+        list-style: none;
+    }
+
+        header li, nav ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+    header nav, nav {
+        text-align: center;
+    }
+
+        header a:hover, nav a:hover {
+            color: #cccccc; /* Accent Color */
+        }
+
+        nav a.active {
+            background-color: #006747;
+        }
+
+/* Main Content Styles */
+main {
+    text-align: center;
+}
+
+.main-heading h1 {
+    color: #333; /* Secondary Color for texts */
+    margin: 40px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Full Width Image in Header */
+.header-image {
+    width: 100%;
+    display: block;
+}
+
+    .header-image img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+/* Main Heading Style */
+main h1 {
+    color: #006747; /* USF green color */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Featured Businesses Section */
+#featured-businesses {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Footer Adjustments */
+footer {
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Ensure navigation fits full width without any space */
+.navbar, .navbar-nav, .container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Ensure the container takes the full width */
+.container, .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+/* Navbar adjustments for alignment */
+.navbar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #004a36;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+    .navbar-nav li {
+        display: flex;
+        align-items: center;
+    }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .navbar-nav li {
+            width: 100%;
+        }
+}

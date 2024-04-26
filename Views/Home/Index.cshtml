@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Bull's Guide to Tampa - Explore, Experience, Enjoy";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Bootstrap classes for responsive nav -->
+            <div class="container-fluid">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Places" asp-action="BusinessDetails">Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Business">Timings and Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="About">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-image">
+            <img src="https://orlandoinformer.com/wp-content/uploads/2023/09/Cheetah-Hunt-BGTB.jpg" alt="USF">
+        </div>
+    </header>
+
+    <main>
+        <h1>Bull's Guide to Tampa</h1>
+        <p>Embark on a journey around the University of South Florida. Discover the best places to eat, play, and relax.</p>
+
+        <section id="featured-businesses">
+            <h2>Tampa's Treasures: Uncover the Magic of the Bay</h2>
+            <div class="business">
+                <p>Welcome to Tampa, the city that pulses with cultural vibrancy, from the thrilling rides at Busch Gardens Tampa Bay to the culinary delights of Acropolis Greek Taverna in New Tampa. Unveil the wonders of the cosmos at the Museum of Science & Industry or indulge in a shopping spree at Tampa Premium Outlets, where style meets savings. Step into the sports-centric atmosphere at North 30th Sports Pub & Grille near USF, where fans and food converge. Embrace nature's tranquility at Lettuce Lake Park, or dive into retail therapy at University Mall and University Plaza. After sunset, embark on an enigmatic journey with Nightly Spirits, exploring ghost stories and historic taverns, and end your day with the homey taste of Eastern Europe at Babushka's in Temple Terrace. Each corner of Tampa offers a unique story, setting the stage for memories that will last a lifetime. Join us as we explore the best places to eat, play, and relax, where every experience is just a stone's throw away.</p>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

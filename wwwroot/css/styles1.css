@@ -1,0 +1,230 @@
+﻿
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f4f4f4 0%, #ffffff 100%);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #004a36; /* Primary Color */
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #cccccc solid 3px; /* Accent Color for contrast */
+}
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    header ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    header li {
+        display: inline;
+        padding: 0 20px;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    header a:hover {
+        color: #cccccc; /* Accent Color */
+    }
+
+nav {
+    text-align: center;
+    background-color: #004a36; /* Updated to match styles1.css */
+    padding: 10px 0;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+    nav a.active {
+        color: #cccccc;
+        background-color: #006747;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase; /* Added to match styles1.css */
+        font-size: 16px; /* Ensured consistency */
+        /* ... other styles ... */
+    }
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-heading h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #333; /* Secondary Color for texts */
+}
+
+#business-list {
+    max-width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.business-item {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333; /* Secondary Color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Ensure that the business item styling is consistent with the theme */
+.business-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+    .business-item .business-image {
+        flex-shrink: 0;
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .business-item .business-info {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+        .business-item .business-info h3 {
+            margin-top: 0;
+            color: #004a36; /* Primary Color for business name */
+        }
+
+        .business-item .business-info p {
+            margin: 5px 0;
+        }
+
+    .business-item .business-link {
+        display: inline-block;
+        margin-right: 10px;
+        color: #004a36; /* Primary Color for links */
+        text-decoration: none;
+    }
+
+        .business-item .business-link:hover {
+            text-decoration: underline;
+        }
+
+/* Buttons and links receive the primary color as well */
+button, .business-link {
+    background-color: #004a36; /* Primary Color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    button:hover, .business-link:hover {
+        background-color: white;
+        color: #004a36;
+        border: 1px solid #004a36;
+    }
+
+.business-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    will-change: transform, box-shadow;
+}
+
+    .business-item:hover {
+        transform: perspective(1000px) rotateX(5deg) translateZ(20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+/* Add any additional custom styles below */
+
