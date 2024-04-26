@@ -1,0 +1,80 @@
+﻿@{
+    Layout = null; // Indicates that this CSHTML file does not use a layout page
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Local Business Directory</title>
+    <link rel="stylesheet" href="/css/styles3.css"> <!-- Assuming the CSS file is in the same directory as the CSHTML file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Bootstrap classes for responsive nav -->
+            <div class="container-fluid">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Places" asp-action="BusinessDetails">Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Business">Timings and Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="About" asp-action="About">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="team-member">
+                <img src="/img/Rithika.jpg" alt="Rithika Kandimalla" class="team-photo">
+                <div class="team-info">
+                    <h3>Rithika Kandimalla</h3>
+                    <p>Worked on making website responsive, integrating CRUD operations, and dynamic data loading .</p>
+                    <a href="https://github.com/RithikaKandimalla" class="github-link">GitHub</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/img/manvith.jpg" alt="Manvith Katkuri" class="team-photo">
+                <div class="team-info">
+                    <h3>Manvith Katkuri</h3>
+                    <p>Responsible for data modeling and contributed to the aesthetic and functional aspects of webpage design.</p>
+                    <a href="https://github.com/Manvith5464" class="github-link">GitHub</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/img/hema.jpeg" alt="Hema Edavalapati" class="team-photo">
+                <div class="team-info">
+                    <h3>Hema Edavalapati</h3>
+                    <p>Pioneered the website's aesthetic enhancement using CSS and developed its responsive layout design.</p>
+                    <a href="https://github.com/edavalapatihema" class="github-link">GitHub</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/img/sindhu.jpeg" alt="Sindhu Pallavi Kandula" class="team-photo">
+                <div class="team-info">
+                    <h3>Sindhu Kandula</h3>
+                    <p>Designed the ER diagram and played a crucial role in agg
+                        
+regating information for the website's content.</p>
+                    <a href="https://github.com/Sindhupallavikandula" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="er-diagram-section">
+            <h2>Our ER Diagram</h2>
+            <img src="/img/er diagram.jpeg" alt="ER Diagram" class="er-diagram">
+        </section>
+    </main>
+</body>
+</html>

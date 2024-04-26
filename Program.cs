@@ -28,4 +28,8 @@ app.MapControllerRoute(
     name: "places",
     pattern: "{controller=Places}/{action=BusinessDetails}/{id?}"); // Additional route for Places
 
+app.MapControllerRoute(
+    name: "about",
+    pattern: "{controller=About}/{action=About}/{id?}");
+
 app.Run();
