@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null; // If you don't have a layout, or specify the layout page if you have one
+    ViewData["Title"] = "Places to Visit - Tampa Area";
 }
 
 <!DOCTYPE html>
@@ -7,44 +7,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places to Visit - Tampa Area</title>
-    <link rel="stylesheet" href="/css/styles2.css"> <!-- Use the tilde to resolve paths in ASP.NET -->
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles2.css">
+    <!-- Include Chart.js library -->
+  
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Bootstrap classes for responsive nav -->
-            <div class="container-fluid">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Places" asp-action="BusinessDetails">Places</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Business" asp-action="Business">Timings and Price</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="About" asp-action="About">About Us</a>
-                    </li>
-                </ul>
-            </div>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Places" asp-action="BusinessDetails">Places</a></li>
+                <li><a asp-controller="Business" asp-action="Business" class="active">Timings and Price</a></li>
+                <li><a asp-controller="About" asp-action="About">About Us</a></li>
+            </ul>
         </nav>
     </header>
-
     <main>
         <section id="business-details">
             <!-- Business details table will be dynamically generated here -->
-            @* Here you might use Razor code to generate content *@
+        </section>
+
+        <section class="charts-section">
+            <h2>Data Visualizations</h2>
+            <div>
+                <h3>Average Rating for Each Place</h3>
+                <canvas id="averageRatingByPlaceChart"></canvas>
+            </div>
+            <div>
+                <h3>Prices vs Places</h3>
+                <canvas id="pricesVsPlacesChart"></canvas>
+            </div>
+            <div>
+                <h3>Top 5 Places by Rating</h3>
+                <canvas id="topPlacesByRatingChart"></canvas>
+            </div>
+            <script src="~/js/business.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="~/js/charts.js"></script>
+
+            
+
+
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Local Business Directory</p>
-    </footer>
-
-    @* Reference scripts with Razor if needed *@
-    <script src="@Url.Content("/js/business.js")"></script> <!-- Use the tilde to resolve paths in ASP.NET MVC -->
-
 </body>
 </html>
